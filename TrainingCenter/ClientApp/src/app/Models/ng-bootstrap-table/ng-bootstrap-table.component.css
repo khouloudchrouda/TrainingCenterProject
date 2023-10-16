@@ -1,0 +1,45 @@
+
+:host ::ng-deep .ngx-datatable table {
+  font-family: 'arimamadurai-bold', sans-serif;
+}
+:host ::ng-deep .ngx-datatable *, .ngx-datatable *:before, .ngx-datatable *:after {
+  box-sizing: border-box;
+  font-family: 'arimamadurai-bold', sans-serif;
+}
+
+:host ::ng-deep .ngx-datatable.material
+.datatable-body
+.progress-linear {
+    display: none;
+}
+
+:host ::ng-deep .datatable-row-wrapper .datatable-row-group,
+:host ::ng-deep .datatable-row-group:not(:last-child) .datatable-row {
+  border-bottom: 1px solid #ccc;
+}
+:host ::ng-deep .datatable-body-cell-label ,
+:host ::ng-deep .datatable-header-cell-template-wrap {
+  text-align: center;
+  vertical-align: middle;
+}
+:host ::ng-deep .ngx-datatable.material
+.datatable-footer {
+  border: none;
+}
+:host ::ng-deep .ngx-datatable .datatable-footer .datatable-footer-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.btn_actions, .btn-paginate{
+  border: none;
+  background: none;
+}
+.red-row {
+  background-color: red;
+}
+
+.green-row {
+  background-color: green;
+}

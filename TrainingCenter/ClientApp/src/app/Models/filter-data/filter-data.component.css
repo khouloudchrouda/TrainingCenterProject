@@ -1,0 +1,100 @@
+.text-right{
+    text-align: right;
+}
+.filters .buttons button{
+    width: 130px;
+    height: 56px;
+}
+
+
+.filters .buttons{
+    margin-top: 51px;
+}
+.filter{
+    top:-62px;
+    right: 22px;
+    padding: 10px 16px;
+}
+.filter.hasfilters:not(:hover){
+    background:#42A71E ;
+    color:#FFF;
+    border-color: #42A71E;
+}
+.filter.hasfilters.active{
+    background: #47454B;
+    border-color: #47454B;
+}
+
+.filter:focus{
+    box-shadow: none;
+}
+.filter span{
+    background: #47454B;
+    width: 14px;
+    height: 3px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    left: 4px;
+    margin: 0 5px 0 20px;
+}
+.filter span:before{
+    background: #47454B;
+    content: " ";
+    width: 22px;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+    top: -6px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+.filter span:after{
+    background: #47454B;
+    content: " ";
+    width: 7px;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    top: 6px;
+
+}
+.filter.hasfilters:not(:hover) span,.filter.hasfilters:not(:hover) span:before,.filter.hasfilters:not(:hover) span:after{
+    background: #FFF;
+}
+.filter:hover span, .filter:hover span:before, .filter:hover span:after,
+.filter.active span, .filter.active span:before, .filter.active span:after
+{
+    background: #FFF;
+}
+.filters{
+    right: 22px;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    width:458px;
+    min-height:445px;
+    /* overflow-y: auto; */
+    top:-8px;
+    z-index: 2;
+    transform-origin: top center;
+    padding:0 46px;
+}
+.filters h2{
+    margin:30px 0 20px 0;
+}
+.filters span{
+    margin:30px 0 20px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Gotham Rounded Light';
+    text-decoration: underline;
+    cursor: pointer;
+}
+.subtitle{
+    display: flex;
+}

@@ -1,0 +1,11 @@
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\bin\Debug\net7.0\TrainingManagerBLL.deps.json
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\bin\Debug\net7.0\TrainingManagerBLL.dll
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\bin\Debug\net7.0\TrainingManagerBLL.pdb
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.AssemblyInfoInputs.cache
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.AssemblyInfo.cs
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.csproj.CoreCompileInputs.cache
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.dll
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\refint\TrainingManagerBLL.dll
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.pdb
+C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\ref\TrainingManagerBLL.dll

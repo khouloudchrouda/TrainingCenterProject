@@ -1,0 +1,55 @@
+.confirmation-overlay{
+    position: fixed;
+    padding: 0 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 684px;
+    z-index: 100002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.7);
+    height: 150%;
+    right: 0;
+    top: var(--mainlogoheight);
+    width: 684px;
+}
+.confirmation-title{
+    background-color: #E0E0E0;
+    min-height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirmation{
+    position: relative;
+    text-align: center;background-color: #fff;width: 545px; display: block; border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 24px;
+     }
+.icon-close{
+    top:24px;
+    right: 30px;
+}
+.btn{
+    min-width: 164px;
+    padding-top: 12px;
+    padding-bottom:12px;
+    height: 56px;
+}
+.confirmation-btn{
+    padding: 60px 0 30px 0;
+}
+.modal{
+    align-items: center;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    height: calc(100% - var(--mainlogoheight));
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: var(--mainlogoheight);
+    width: 684px;
+    z-index: 1000;
+}

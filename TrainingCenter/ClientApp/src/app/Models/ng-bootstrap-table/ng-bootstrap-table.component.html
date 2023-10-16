@@ -1,0 +1,46 @@
+
+<ngx-datatable [rows]="rows"
+               class="material"
+               [rowClass]="getRowColorClass"
+               [loadingIndicator]="loadingIndicator"
+               [columnMode]="'force'"
+               [headerHeight]="50"
+               [footerHeight]="100"
+               [rowHeight]="'auto'"
+               [columns]="columns"
+               [limit]="10"
+               [offset]="currentPage * pageSize"
+               [scrollbarH]="false"
+               [reorderable]="reorderable"
+               [selectAllRowsOnPage]="false"> 
+
+         
+               
+               <ngx-datatable-column *ngFor="let column of columns; let i = index;" name="{{column.name}}"
+                 prop="{{column.prop}}">
+               </ngx-datatable-column>
+       
+               <ngx-datatable-column name="Actions"  prop="Id">
+                 <ng-template let-row="row" let-value="value" let-rowIndex="rowIndex"
+                  ngx-datatable-cell-template>
+                   <button class="btn_actions" (click)="EditRow(row)"><img src="assets\icons\pencil.png" /></button>
+                   <button class="btn_actions" (click)="DeleteRow(row)"><img src="assets\icons\garbage.png" /></button>
+                   <button class="btn_actions" (click)="OpenRow(row)"><img src="assets\icons\fe_search.png" /></button>
+                 </ng-template>
+               </ngx-datatable-column>
+
+             
+            <ngx-datatable-footer>
+              <ng-template ngx-datatable-footer-template>
+                <div class="d-flex justify-content-center"> 
+                    <button class="btn-paginate" [disabled]="currentPage === 0" (click)="currentPage = currentPage - 1"><img src="assets\icons\circle-arrow-left.png" /></button>
+                    <button class="btn-paginate"><img src="assets\icons\pagenumber.png" /></button>
+                    <button class="btn-paginate"><img src="assets\icons\pagenumber2.png" /></button>
+                    <button class="btn-paginate" [disabled]="currentPage >= (Data.length / pageSize) - 1" (click)="currentPage = currentPage + 1"><img src="assets\icons\circle-arrow-right.png" /></button>
+              </div> 
+              </ng-template>
+            </ngx-datatable-footer>
+</ngx-datatable>
+
+
+

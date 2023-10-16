@@ -19,5 +19,8 @@ export class FormationDetailsComponent {
   closePopup(){
     this.close.emit(false);
   }
+  EditFormation(){
+    
+  }
 
 }

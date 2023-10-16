@@ -30,6 +30,7 @@ export class HomeComponent {
 
   closePopup(value : boolean){
     this.showDetails = value;
+    this.showFormulaire = value;
   }
   OpenFormulaire(){
     this.showFormulaire = true;

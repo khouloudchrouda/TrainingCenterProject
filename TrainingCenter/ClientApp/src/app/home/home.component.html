@@ -14,6 +14,6 @@
     </div>
     <app-ng-bootstrap-table (openRowEvent)="OpenRow($event)" (deleteRowEvent)="DeleteRow($event)" (editRowEvent)="EditRow($event)"></app-ng-bootstrap-table>
     <app-formation-details (close)="closePopup($event)" [type] = type_action *ngIf="showDetails"></app-formation-details>
-    <app-add-formation *ngIf="showFormulaire"></app-add-formation>
+    <app-add-formation (close)="closePopup($event)"  *ngIf="showFormulaire"></app-add-formation>
 
 </div>           

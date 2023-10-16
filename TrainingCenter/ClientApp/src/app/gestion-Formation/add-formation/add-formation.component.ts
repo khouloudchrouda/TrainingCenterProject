@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./add-formation.component.css']
 })
 export class AddFormationComponent {
+
+  @Output() close = new EventEmitter<any>();
 
   InformationDetails!: FormGroup;
   DescriptionDetails!: FormGroup;
@@ -71,6 +73,10 @@ export class AddFormationComponent {
 
   gotostep(numstep : number){
      this.step = numstep
+  }
+
+  closePopup(){
+    this.close.emit(false);
   }
   
 }

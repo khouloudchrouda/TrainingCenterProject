@@ -56,7 +56,7 @@
 #msform input, #msform textarea {
     padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 0px;
+    border-radius: 8px;
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
@@ -78,32 +78,43 @@
 }
 /*buttons*/
 #msform .action-button {
-    width: 100px;
+    width: 20%;
     background: var(--green);
-    font-weight: bold;
     color: white;
     border: 0 none;
     border-radius: 9px;
     cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 20px;
+    padding: 10px 2px;
+    margin: 25px 31px;
     position: absolute;
-    bottom: 0;
+    font-size: 20px;
+    height: 50px;
     right: 0;
+    padding: 10px 16px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
 }
 #msform .action-button-previous {
-    width: 100px;
-    background: #C5C5F1;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 25px;
+ 
+    color: var(--bs-red);
+    background-color: white;
+    border-color: var(--bs-red);
+    width: 20%;
+    border-radius: 9px;
     cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px;
+    padding: 10px 2px;
+    margin: 25px 31px;
+    position: absolute;
+    font-size: 20px;
+    height: 50px;
+    padding: 10px 16px;
+    
+}
+.cursor-pointer {
+    font-size: 12px;
+    line-height: 10px;
+    cursor: pointer;
 }
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
@@ -125,6 +136,12 @@
     font-size: 13px;
     color: #666;
     margin-bottom: 20px;
+}
+.info-champ{
+    margin: 20px 10px;
+    width: 33px;
+    height: 25px;
+    display: flex;
 }
 /*progressbar*/
 #progressbar {

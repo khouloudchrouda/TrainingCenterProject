@@ -31,10 +31,7 @@ export class AddFormationComponent {
             population: ['', Validators.required],
             prerequis: ['', Validators.required]
         });
-        this.ProgrammeDetails = this.formBuilder.group({
-            highest_qualification: ['', Validators.required],
-            university: ['', Validators.required],
-            total_marks: ['',Validators.required]
+        this.ProgrammeDetails = this.formBuilder.group({        
         });
   }
   get information() { return this.InformationDetails.controls; }

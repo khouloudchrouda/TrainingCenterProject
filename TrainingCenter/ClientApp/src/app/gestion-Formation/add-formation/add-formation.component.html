@@ -81,10 +81,9 @@
         </form>
          <form [formGroup]="DescriptionDetails" id="msform">
             <fieldset *ngIf="step == 2" >
-                <app-rich-text-editor></app-rich-text-editor>
                 <label class="control-label" for="sName">Description : *</label>
                 <div class="d-flex">
-                    <textarea rows="5" cols="5" formControlName="description"  placeholder="description"></textarea>
+                    <app-rich-text-editor class="col-10" placeholder="description"  rows="5" cols="5" ></app-rich-text-editor>
                     <img class="info-champ" src="assets\icons\circle-exclamation.png" />
                  </div>
                 
@@ -93,7 +92,7 @@
                 </div>
                 <label class="control-label" for="sName">Population Cible : *</label>
                 <div class="d-flex">
-                    <textarea rows="5" cols="5" formControlName="population"  placeholder="population"></textarea>
+                    <app-rich-text-editor class="col-10" placeholder="description"  rows="5" cols="5" ></app-rich-text-editor>
                     <img class="info-champ" src="assets\icons\circle-exclamation.png" />
                  </div>
                 
@@ -102,7 +101,8 @@
                 </div>
                 <label class="control-label" for="sName">Prerequis : *</label>
                 <div class="d-flex">
-                    <textarea rows="5" cols="5" formControlName="prerequis"  placeholder="prerequis"></textarea>
+                    <app-rich-text-editor class="col-10" placeholder="description"  rows="5" cols="5" ></app-rich-text-editor>
+                    <!-- <textarea rows="5" cols="5" formControlName="prerequis"  placeholder="prerequis"></textarea> -->
                     <img class="info-champ" src="assets\icons\circle-exclamation.png" />
                  </div>
                 

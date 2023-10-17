@@ -1,0 +1,31 @@
+<div class="back-layer">
+        <div class="section">
+            <i class="icon-close"></i>
+            <div class="section-title">
+                <span class="subtitle">Ajouter Catégorie</span> 
+            </div>
+            <div class="row justify-content-left p-5 pt-3">
+                <div class="col-12 form-group ">
+                        <label  class="form-label body_medium">Titre</label>
+                        <input  type="text" class="form-control"  placeholder="Ecrire Titre">
+                </div>
+                <div class="col-5 form-group p-2 ">
+                    <label  class="form-label body_medium">Code</label>
+                    <div class="input-group col-8">
+                        <input style="border-left: none;" type="text"  class="form-control"  placeholder="Ecrire code">
+                    </div>
+                 </div>
+                <div class="col-12 form-group p-2">
+                    <label  class="form-label body_medium">Description (500 characters max.)</label>
+                    <div class="input-group">
+                        <textarea rows="5" cols="5" formControlName="description" class="form-control" placeholder="Ecrire Description"></textarea> 
+                    </div>
+                </div>
+            </div>
+            <div class="section-btn">
+                <button class="btn btn-success body_medium" style="" (click)="closePopup()">SAUVEGARDER</button>
+                <button class="btn btn-outline-danger body_medium"  (click)="closePopup()">ANNULER</button>
+                
+            </div>
+        </div>
+    </div>

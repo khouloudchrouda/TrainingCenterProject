@@ -1,4 +1,5 @@
 import { Component, ViewChild, TemplateRef, OnInit } from '@angular/core';
+import { columnsformations, formations } from '../data/formations';
 
 
 @Component({
@@ -10,9 +11,11 @@ export class HomeComponent {
   showDetails = false;
   type_action = "";
   showFormulaire = false
+  Data = formations
+  Columns = columnsformations
 
 
-  OpenRow(row: any){
+  OpenRow(row: any): void{
     console.log('im in open')
     this.showDetails = true;
     this.type_action = "open"

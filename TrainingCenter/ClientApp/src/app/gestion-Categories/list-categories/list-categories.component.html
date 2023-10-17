@@ -1,0 +1,18 @@
+<div class="container-fluid p-0">
+    <div>
+      <app-search-data></app-search-data>
+    </div>
+    <div class="btn-actions">
+    <div  class="btn-actions-left" >
+        <button class="btn btn-outline-dark body_medium" (click)="OpenFormulaire()" ><i class='bx bx-plus' ></i>  Ajouter Categorie</button>
+    </div>
+    <div  class="btn-actions-right" >  
+        <button class="btn btn-outline-dark body_medium" style="margin-right: 10px;" > Imprimer <i class='bx bx-down-arrow-alt' ></i></button>
+        <button class="btn btn-outline-dark body_medium" >Filters <i class='bx bx-filter' ></i></button>
+    </div>
+    </div>
+    <app-ng-bootstrap-table [Data] = Data [Columns] = Columns (openRowEvent)="OpenRow($event)" (deleteRowEvent)="DeleteRow($event)" (editRowEvent)="EditRow($event)"></app-ng-bootstrap-table>
+    <app-details-categorie (close)="closePopup($event)" [type] = type_action *ngIf="showDetails"></app-details-categorie>
+    <app-add-categories (close)="closePopup($event)"  *ngIf="showFormulaire"></app-add-categories>
+
+</div>   

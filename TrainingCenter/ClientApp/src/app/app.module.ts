@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule} from '@angular/core';
+import { NgModule ,NO_ERRORS_SCHEMA} from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-
+import { QuillModule } from "ngx-quill";
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
@@ -23,7 +23,12 @@ import { PopupConfirmationComponent } from './Models/popup-confirmation/popup-co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from "@angular/common";
 import { RichTextEditorComponent } from './Models/rich-text-editor/rich-text-editor.component';
-import { QuillModule } from 'ngx-quill';
+import { MultiSelectOptionsComponent } from './Models/multi-select-options/multi-select-options.component';
+import { ModuleProgrammeComponent } from './Models/module-programme/module-programme.component';
+import { ListCategoriesComponent } from './gestion-Categories/list-categories/list-categories.component';
+import { AddCategoriesComponent } from './gestion-Categories/add-categories/add-categories.component';
+import { DetailsCategorieComponent } from './gestion-Categories/details-categorie/details-categorie.component';
+
 
 
 @NgModule({
@@ -41,7 +46,13 @@ import { QuillModule } from 'ngx-quill';
         FilterDataComponent,
         FormationDetailsComponent,
         PopupConfirmationComponent,
-        RichTextEditorComponent
+        RichTextEditorComponent,
+        MultiSelectOptionsComponent,
+        ModuleProgrammeComponent,
+        ListCategoriesComponent,
+        AddCategoriesComponent,
+        DetailsCategorieComponent
+        
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
@@ -57,7 +68,7 @@ import { QuillModule } from 'ngx-quill';
         ReactiveFormsModule,
         CommonModule, 
         ReactiveFormsModule,
-        QuillModule.forRoot(),
+        QuillModule,
         RouterModule.forRoot([
             { path: '', component: HomeComponent, pathMatch: 'full' },
             { path: 'counter', component: CounterComponent },
@@ -65,8 +76,10 @@ import { QuillModule } from 'ngx-quill';
             { path: 'list-formation', component: ListFormationsComponent },
             { path: 'formation_details', component: FormationDetailsComponent },
             { path: 'add-formation', component: AddFormationComponent },
+            { path: 'list-categories', component: ListCategoriesComponent },
             { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
         ]),
-    ]
+    ],
+    schemas:[NO_ERRORS_SCHEMA], 
 })
 export class AppModule { }

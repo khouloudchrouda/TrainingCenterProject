@@ -19,9 +19,9 @@ a {
   color: #0366d6;
 }
 
-app-home {
+app-home , app-list-formations , app-list-categories {
   width: 100%;
-  padding: 20px 50px;
+  padding: 10% 50px;
 }
 app-menu-side-bar {
   background-color: #F0F2F5;

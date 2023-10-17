@@ -20,7 +20,7 @@ export class MenuSideBarComponent {
           link: "",
         }]
     }, {
-      link_name: "Category",
+      link_name: "Formations",
       link: null,
       icon: "bx bx-collection",
       sub_menu: [
@@ -33,6 +33,20 @@ export class MenuSideBarComponent {
         }
       ]
     }, {
+      link_name: "Categories",
+      link: null,
+      icon: "bx bx-collection",
+      sub_menu: [
+        {
+          link_name: "List Categories",
+          link: "list-categories",
+        }, {
+          link_name: "Add Categories",
+          link: "add-categorie",
+        }
+      ]
+    },
+     {
       link_name: "Espace Condidat",
       link: "add-formation",
       icon: "bx bx-book-alt",

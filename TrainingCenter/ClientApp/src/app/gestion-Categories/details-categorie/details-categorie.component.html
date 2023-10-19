@@ -1,19 +1,23 @@
 <div class="back-layer">
-    <div class="section">
-        <i class="icon-close" (click)="closePopup()"></i>
+    <div class="section">  
         <div class="section-title">
-            <span class="subtitle">Catégorie</span> 
+            <span class="subtitle">Catégorie <i class='bx bx-x' (click)="closePopup()"></i></span> 
         </div>
-        <div class="row justify-content-left p-5 pt-3">
+        <div class="row justify-content-left p-5">
             <div class="col-12 form-group ">
                     <label  class="form-label col-3 body_medium">Titre :  </label>
-                    <span>  Developpement Mobile</span>
+                    <span class=" col-6">  Developpement Mobile</span>
+                    <div class=" col-3">
+                        <svg width="30" height="40" class="pdficon">
+                      <image xlink:href="assets/images/print-pdf.png" width="30" height="40" />
+                  </svg>
+                  </div>
             </div>
-            <div class="col-12 form-group p-2 ">
+            <div class="col-12 form-group ">
                 <label  class="form-label col-3 body_medium">Code :  </label>
                 <span>  1000056</span>
              </div>
-            <div class="col-12 form-group p-2">
+            <div class="col-12 form-group">
                 <label  class="form-label col-3 body_medium">Description :  </label>
                 <span style="text-align: left;"> Création d'applications spécifiquement conçues 
                     pour les appareils mobiles tels que les smartphones
@@ -24,28 +28,29 @@
             <button class="btn btn-outline-dark body_medium"  (click)="closePopup()">OK</button>
             
         </div> -->
-        <div class="d-flex action-buttons w-100">  
+        <div class="d-flex action-buttons w-100 ">  
             <div class="col-4 options_btn" *ngIf="type != 'delete' && type != 'edit'">
                 <button class="btn btn-outline-success body_medium" (click)="closePopup()">OK</button>
             </div>
-        <div class="d-flex bloc-button" *ngIf="type == 'delete'">
-            <div class="col-4 options_btn" >
+        <div class="d-flex col-12 bloc-button" *ngIf="type == 'delete'">
+            <div class="col-6 options_btn" >
                 <button class="btn btn-outline-success body_medium" (click)="DeleteFormation()">Supprimer</button>
             </div>
-            <div class="col-4 options_btn" >
+            <div class="col-6 options_btn" >
                 <button class="btn btn-outline-danger body_medium" (click)="closePopup()">Annuler</button>
             </div>
         </div>
 
-        <div class="d-flex bloc-button" *ngIf="type == 'edit'">
-            <div class="col-4 options_btn" >
+        <div class="col-12 d-flex bloc-button" *ngIf="type == 'edit'">
+            <div class="col-6 options_btn" >
                 <button class="btn btn-outline-success body_medium" (click)="EditFormation()">Modifier</button>
             </div>
-            <div class="col-4 options_btn" >
+            <div class="col-6 options_btn" >
                 <button class="btn btn-outline-danger body_medium" (click)="closePopup()">Annuler</button>
             </div>
         </div>
 
     </div>
+    <app-popup-confirmation [title]= title *ngIf="showPopupDelete"></app-popup-confirmation>
     </div>
 </div>

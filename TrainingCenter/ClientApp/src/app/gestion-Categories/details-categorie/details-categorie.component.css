@@ -45,6 +45,8 @@
     padding-bottom: 24px;
     top: 50%;
     left: 50%;
+    height: auto;
+    min-height: 50%;
     transform: translate(-50%, -50%);
      }
 .icon-close{
@@ -53,8 +55,8 @@
 }
 .btn{
     min-width: 164px;
-    padding-top: 17px;
-    padding-bottom:17px;
+    padding-top: 12px;
+    padding-bottom:12px;
 }
 .section-btn{
     justify-content: space-around;
@@ -69,12 +71,20 @@
 .form-group{
     display: flex;
     justify-content: left;
+    padding: 3% 0;
+}
+.form-group span{
+    flex: 0 0 auto;
+    justify-content: left;
+    width: 50%;
+    display: flex;
 }
 .action-buttons {
     align-self: end;
-    margin-bottom: 30px;
     justify-content: center;
+
 }
 .bloc-button{
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 0 10%;
 }

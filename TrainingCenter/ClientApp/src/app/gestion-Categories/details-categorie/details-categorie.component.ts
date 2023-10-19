@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class DetailsCategorieComponent {
   @Input() type : string = "" ;
   @Output() close = new EventEmitter<any>();
-
+  title : string = 'Voulez-vous vraiment supprimer La Categorie?';
   showPopupDelete = false
   
 

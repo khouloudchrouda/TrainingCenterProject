@@ -1,9 +1,8 @@
 <div *ngIf="show_popup" class ="modal">
 <div class="confirmation-overlay">
     <div class="confirmation">
-        <i class="icon-close" (click)="close()"></i>
         <div class="confirmation-title">
-            <span class="subtitle">Voulez-vous vraiment supprimer La Formation? </span>
+            <span class="subtitle">{{title}} <i class='bx bx-x' (click)="close()"></i></span>
         </div>
         <div class="confirmation-btn">
             <button class="btn btn-outline-success body_medium" (click)="DeleteFormation()" style="margin-right: 59px">Oui, Supprimer</button>

@@ -19,3 +19,23 @@ export const columnsformations = [
         { prop: 'Prix'  , name :'Prix' }
     
 ]
+
+export const Populationcible = [   
+    { id: 1  , name :'Étudiants en design'},
+    { id: 2  , name :'Développeurs web'},
+    { id: 3  , name :'Professionnels en reconversion'},
+]
+
+export const Prerequis = [ 
+    { id: 1  , name :'Connaissance du design dinterface utilisateur'},
+    { id: 2  , name :'Compétences en design graphique'},
+]
+
+export const Programmeformations = [
+    
+    { name: 'CCP 1 : Concevoir les éléments graphiques d une interface et de supports de communication'  , programme : [ 'Réaliser des illustrations, des graphismes et des visuels' , 'Concevoir des interfaces graphiques et des prototypes' , 'Réaliser une animation pour différents supports de diffusion' , 'Créer des supports de communication']},
+    { name: 'CCP 2 : Concevoir les éléments graphiques d une interface et de supports de communication '  , programme : [ 'Connaissance du design dinterface utilisateur' , 'Compétences en design graphique']},
+    { name: 'CCP 3 : Concevoir les éléments graphiques d une interface et de supports de communication'  , programme : [ 'Réaliser des illustrations, des graphismes et des visuels' , 'Concevoir des interfaces graphiques et des prototypes' , 'Réaliser une animation pour différents supports de diffusion' , 'Créer des supports de communication']},
+    { name: 'CCP 4 : Concevoir les éléments graphiques d une interface et de supports de communication'  , programme : [ 'Réaliser des illustrations, des graphismes et des visuels' ,  'Réaliser une animation pour différents supports de diffusion' , 'Créer des supports de communication']},
+
+]

@@ -306,7 +306,9 @@ li{
     font-size: 12px;
 }
 .btn{
-    width: 150px;
+    min-width: 164px;
+    padding-top: 12px;
+    padding-bottom:12px;
 }
 .name_formation {
     white-space: nowrap;
@@ -328,7 +330,6 @@ li{
 
 .action-buttons {
     align-self: end;
-    margin-bottom: 30px;
     justify-content: center;
 }
 
@@ -364,7 +365,7 @@ li{
         border-radius: 6px;
     }
     .toggle-panel-content{
-        padding: 0 5px 20px 5px;
+        padding: 0 5px 5px 5px;
     }
 }
 
@@ -406,5 +407,10 @@ li{
     font-family: Gotham Rounded;
 }
 .bloc-button{
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 4%;
+}
+.options_btn{
+    justify-content: center;
+    display: flex;
 }

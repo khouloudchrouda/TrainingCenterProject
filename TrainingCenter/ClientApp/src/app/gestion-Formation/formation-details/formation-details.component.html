@@ -2,7 +2,7 @@
 <div class="odv container">
     <div class="formation-detail-progressbar" :class="loaderclass"></div>
 
-    <div class="detail-header position-fixed " >
+    <div class="detail-header position-fixed w-100 " >
         <div class="d-flex align-items-center justify-content-between">
             <div class="detail-title text-capitalize">
                 <div class="name_formation"> Formation : Concepteur Designer UI</div>
@@ -53,22 +53,18 @@
                 </div>
                 <h5 class="pt-5">Population Cible:</h5>
                 <div class="formation-brief-info-section mt-2" >
-                    <div class="d-flex">
-                        <ul>
-                            <li>Étudiants en design</li>
-                            <li>Développeurs web</li>
-                            <li>Professionnels en reconversion</li>
-                        </ul>
-                        
+                    <div >
+                        <ul *ngFor="let population of populationCible">
+                            <li>{{population.name}}</li>
+                        </ul> 
                     </div>
                 </div>
 
                 <h5 class="pt-3">Prérequis:</h5>
                 <div class="formation-brief-info-section mt-2" >
-                    <div class="d-flex">
-                        <ul>
-                            <li>Connaissance du design d'interface utilisateur</li>
-                            <li>Compétences en design graphique</li>
+                    <div >
+                        <ul *ngFor="let prerequi of listPrerequis">
+                            <li>{{prerequi.name}}</li>
                         </ul>
                         
                     </div>
@@ -76,159 +72,63 @@
             </div>
             <h5 class="pt-3">Programme:</h5>
             <div class="col-12 toggle-panel active"  >
-                <div class="toggle-panel-content" >
-                    <div class="toggle-panel-content col-12" >
+                <div class="toggle-panel-content " *ngFor="let programme of ListProgramme ; let i = index">
+                    <div class="toggle-panel-content col-12" (click)="selectPanel(i)">
                         <div class="formation-item-header d-flex justify-content-between cursor-pointer mt-2">
                             <div class="formation-num d-flex align-items-center">
                                 <span class="formation-pay"></span>
-                                <span class="formation-date ms-3">CCP 1 : Concevoir les éléments graphiques d'une interface et de supports de communication </span>
+                                <span class="formation-date ms-3">{{programme.name}}</span>
                             </div>
-                            <div class="formation-date-panel d-flex align-items-center">
-                                <svg v-if="show" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="formation-date-panel d-flex align-items-center"  >
+                                <svg *ngIf="!show || courentItem != i" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" >
                                     <path d="M15.6996 7.71894C15.8918 7.54879 16 7.31749 16 7.07732C16 6.83627 15.8919 6.60497 15.6996 6.43481L8.73403 0.265873C8.54176 0.0957178 8.28141 0 8.00904 0C7.73667 0 7.47632 0.0957132 7.28406 0.265873L0.318501 6.43481C0.118228 6.6032 0.00306129 6.83715 6.19888e-05 7.08177C-0.00294113 7.32636 0.105208 7.5621 0.30148 7.73491C0.496747 7.90773 0.763116 8.00344 1.03949 7.9999C1.31586 7.99637 1.57923 7.89444 1.7695 7.7172L8.00907 2.18986L14.2486 7.7172C14.4409 7.88735 14.7013 7.98395 14.9736 7.98395C15.246 7.98484 15.5073 7.88913 15.6996 7.71897L15.6996 7.71894Z" fill="#F8F8F8"/>
                                 </svg>
-                                <svg v-else width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg *ngIf="show && courentItem == i" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.300417 0.281057C0.108154 0.451213 0 0.682512 0 0.922681C0 1.16373 0.108149 1.39503 0.300417 1.56519L7.26597 7.73413C7.45824 7.90428 7.71859 8 7.99096 8C8.26333 8 8.52368 7.90429 8.71594 7.73413L15.6815 1.56519C15.8818 1.3968 15.9969 1.16285 15.9999 0.918234C16.0029 0.673641 15.8948 0.437896 15.6985 0.265086C15.5033 0.0922713 15.2369 -0.00344372 14.9605 9.53674e-05C14.6841 0.00363445 14.4208 0.105556 14.2305 0.282804L7.99093 5.81014L1.75136 0.282804C1.5591 0.112648 1.29875 0.0160456 1.02638 0.0160456C0.754004 0.0151596 0.49268 0.110895 0.300417 0.281057Z" fill="#F8F8F8"/>
                                 </svg>
                             </div>
                         </div>
 
-                        <div class="order-item-body" v-if="show">
+                        <div class="order-item-body" *ngIf="show && courentItem == i">
                             <div class="formation-brief-info-section mt-2" >
-                                <div class="d-flex">
-                                    <ul>
-                                        <li>Réaliser des illustrations, des graphismes et des visuels</li>
-                                        <li>Concevoir des interfaces graphiques et des prototypes</li>
-                                        <li>Réaliser une animation pour différents supports de diffusion</li>
-                                        <li>Créer des supports de communication</li>
+                                <div>
+                                    <ul *ngFor="let list of programme.programme">
+                                        <li>{{list}}</li>
                                     </ul>
-                                    
                                 </div>
                             </div>
                            
                         </div>
                     </div>
-                    <div class="toggle-panel-content col-12" >
-                        <div class="formation-item-header d-flex justify-content-between cursor-pointer mt-2">
-                            <div class="formation-num d-flex align-items-center">
-                                <span class="formation-pay"></span>
-                                <span class="formation-date ms-3">CCP 1 : Concevoir les éléments graphiques d'une interface et de supports de communication </span>
-                            </div>
-                            <div class="formation-date-panel d-flex align-items-center">
-                                <svg v-if="show" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.6996 7.71894C15.8918 7.54879 16 7.31749 16 7.07732C16 6.83627 15.8919 6.60497 15.6996 6.43481L8.73403 0.265873C8.54176 0.0957178 8.28141 0 8.00904 0C7.73667 0 7.47632 0.0957132 7.28406 0.265873L0.318501 6.43481C0.118228 6.6032 0.00306129 6.83715 6.19888e-05 7.08177C-0.00294113 7.32636 0.105208 7.5621 0.30148 7.73491C0.496747 7.90773 0.763116 8.00344 1.03949 7.9999C1.31586 7.99637 1.57923 7.89444 1.7695 7.7172L8.00907 2.18986L14.2486 7.7172C14.4409 7.88735 14.7013 7.98395 14.9736 7.98395C15.246 7.98484 15.5073 7.88913 15.6996 7.71897L15.6996 7.71894Z" fill="#F8F8F8"/>
-                                </svg>
-                                <svg v-else width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.300417 0.281057C0.108154 0.451213 0 0.682512 0 0.922681C0 1.16373 0.108149 1.39503 0.300417 1.56519L7.26597 7.73413C7.45824 7.90428 7.71859 8 7.99096 8C8.26333 8 8.52368 7.90429 8.71594 7.73413L15.6815 1.56519C15.8818 1.3968 15.9969 1.16285 15.9999 0.918234C16.0029 0.673641 15.8948 0.437896 15.6985 0.265086C15.5033 0.0922713 15.2369 -0.00344372 14.9605 9.53674e-05C14.6841 0.00363445 14.4208 0.105556 14.2305 0.282804L7.99093 5.81014L1.75136 0.282804C1.5591 0.112648 1.29875 0.0160456 1.02638 0.0160456C0.754004 0.0151596 0.49268 0.110895 0.300417 0.281057Z" fill="#F8F8F8"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- <div class="order-item-body" v-if="show">
-                            <div class="formation-brief-info-section mt-2" >
-                                <div class="d-flex">
-                                    <ul>
-                                        <li>Réaliser des illustrations, des graphismes et des visuels</li>
-                                        <li>Concevoir des interfaces graphiques et des prototypes</li>
-                                        <li>Réaliser une animation pour différents supports de diffusion</li>
-                                        <li>Créer des supports de communication</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                           
-                        </div> -->
-                    </div>
-                    <div class="toggle-panel-content col-12" >
-                        <div class="formation-item-header d-flex justify-content-between cursor-pointer mt-2">
-                            <div class="formation-num d-flex align-items-center">
-                                <span class="formation-pay"></span>
-                                <span class="formation-date ms-3">CCP 1 : Concevoir les éléments graphiques d'une interface et de supports de communication </span>
-                            </div>
-                            <div class="formation-date-panel d-flex align-items-center">
-                                <svg v-if="show" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.6996 7.71894C15.8918 7.54879 16 7.31749 16 7.07732C16 6.83627 15.8919 6.60497 15.6996 6.43481L8.73403 0.265873C8.54176 0.0957178 8.28141 0 8.00904 0C7.73667 0 7.47632 0.0957132 7.28406 0.265873L0.318501 6.43481C0.118228 6.6032 0.00306129 6.83715 6.19888e-05 7.08177C-0.00294113 7.32636 0.105208 7.5621 0.30148 7.73491C0.496747 7.90773 0.763116 8.00344 1.03949 7.9999C1.31586 7.99637 1.57923 7.89444 1.7695 7.7172L8.00907 2.18986L14.2486 7.7172C14.4409 7.88735 14.7013 7.98395 14.9736 7.98395C15.246 7.98484 15.5073 7.88913 15.6996 7.71897L15.6996 7.71894Z" fill="#F8F8F8"/>
-                                </svg>
-                                <svg v-else width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.300417 0.281057C0.108154 0.451213 0 0.682512 0 0.922681C0 1.16373 0.108149 1.39503 0.300417 1.56519L7.26597 7.73413C7.45824 7.90428 7.71859 8 7.99096 8C8.26333 8 8.52368 7.90429 8.71594 7.73413L15.6815 1.56519C15.8818 1.3968 15.9969 1.16285 15.9999 0.918234C16.0029 0.673641 15.8948 0.437896 15.6985 0.265086C15.5033 0.0922713 15.2369 -0.00344372 14.9605 9.53674e-05C14.6841 0.00363445 14.4208 0.105556 14.2305 0.282804L7.99093 5.81014L1.75136 0.282804C1.5591 0.112648 1.29875 0.0160456 1.02638 0.0160456C0.754004 0.0151596 0.49268 0.110895 0.300417 0.281057Z" fill="#F8F8F8"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="order-item-body" v-if="show">
-                            <div class="formation-brief-info-section mt-2" >
-                                <div class="d-flex">
-                                    <ul>
-                                        <li>Réaliser des illustrations, des graphismes et des visuels</li>
-                                        <li>Concevoir des interfaces graphiques et des prototypes</li>
-                                        <li>Réaliser une animation pour différents supports de diffusion</li>
-                                        <li>Créer des supports de communication</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    <div class="toggle-panel-content col-12" >
-                        <div class="formation-item-header d-flex justify-content-between cursor-pointer mt-2">
-                            <div class="formation-num d-flex align-items-center">
-                                <span class="formation-pay"></span>
-                                <span class="formation-date ms-3">CCP 1 : Concevoir les éléments graphiques d'une interface et de supports de communication </span>
-                            </div>
-                            <div class="formation-date-panel d-flex align-items-center">
-                                <svg v-if="show" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.6996 7.71894C15.8918 7.54879 16 7.31749 16 7.07732C16 6.83627 15.8919 6.60497 15.6996 6.43481L8.73403 0.265873C8.54176 0.0957178 8.28141 0 8.00904 0C7.73667 0 7.47632 0.0957132 7.28406 0.265873L0.318501 6.43481C0.118228 6.6032 0.00306129 6.83715 6.19888e-05 7.08177C-0.00294113 7.32636 0.105208 7.5621 0.30148 7.73491C0.496747 7.90773 0.763116 8.00344 1.03949 7.9999C1.31586 7.99637 1.57923 7.89444 1.7695 7.7172L8.00907 2.18986L14.2486 7.7172C14.4409 7.88735 14.7013 7.98395 14.9736 7.98395C15.246 7.98484 15.5073 7.88913 15.6996 7.71897L15.6996 7.71894Z" fill="#F8F8F8"/>
-                                </svg>
-                                <svg v-else width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.300417 0.281057C0.108154 0.451213 0 0.682512 0 0.922681C0 1.16373 0.108149 1.39503 0.300417 1.56519L7.26597 7.73413C7.45824 7.90428 7.71859 8 7.99096 8C8.26333 8 8.52368 7.90429 8.71594 7.73413L15.6815 1.56519C15.8818 1.3968 15.9969 1.16285 15.9999 0.918234C16.0029 0.673641 15.8948 0.437896 15.6985 0.265086C15.5033 0.0922713 15.2369 -0.00344372 14.9605 9.53674e-05C14.6841 0.00363445 14.4208 0.105556 14.2305 0.282804L7.99093 5.81014L1.75136 0.282804C1.5591 0.112648 1.29875 0.0160456 1.02638 0.0160456C0.754004 0.0151596 0.49268 0.110895 0.300417 0.281057Z" fill="#F8F8F8"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="order-item-body" v-if="show">
-                            <div class="formation-brief-info-section mt-2" >
-                                <div class="d-flex">
-                                    <ul>
-                                        <li>Réaliser des illustrations, des graphismes et des visuels</li>
-                                        <li>Concevoir des interfaces graphiques et des prototypes</li>
-                                        <li>Réaliser une animation pour différents supports de diffusion</li>
-                                        <li>Créer des supports de communication</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
         <div class="d-flex action-buttons w-100">  
-                <div class="col-4 options_btn" *ngIf="type != 'delete' && type != 'edit'">
+                <div class="col-12 options_btn p-4" *ngIf="type != 'delete' && type != 'edit'">
                     <button class="btn btn-outline-success body_medium" (click)="closePopup()">OK</button>
                 </div>
-            <div class="d-flex bloc-button" *ngIf="type == 'delete'">
-                <div class="col-4 options_btn" >
+            <div class="col-12 d-flex bloc-button" *ngIf="type == 'delete'">
+                <div class="col-6 options_btn" >
                     <button class="btn btn-outline-success body_medium" (click)="DeleteFormation()">Supprimer</button>
                 </div>
-                <div class="col-4 options_btn" >
+                <div class="col-6 options_btn" >
                     <button class="btn btn-outline-danger body_medium" (click)="closePopup()">Annuler</button>
                 </div>
             </div>
 
-            <div class="d-flex bloc-button" *ngIf="type == 'edit'">
-                <div class="col-4 options_btn" >
+            <div class="col-12 d-flex bloc-button" *ngIf="type == 'edit'">
+                <div class="col-6 options_btn" >
                     <button class="btn btn-outline-success body_medium" (click)="EditFormation()">Modifier</button>
                 </div>
-                <div class="col-4 options_btn" >
+                <div class="col-6 options_btn" >
                     <button class="btn btn-outline-danger body_medium" (click)="closePopup()">Annuler</button>
                 </div>
             </div>
 
         </div>
     </div>
-    <app-popup-confirmation *ngIf="showPopupDelete"></app-popup-confirmation>
+    <app-popup-confirmation [title] = title *ngIf="showPopupDelete"></app-popup-confirmation>
 </div>
 
 </div>

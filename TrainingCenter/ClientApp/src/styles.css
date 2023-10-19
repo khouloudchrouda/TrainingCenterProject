@@ -21,7 +21,7 @@ a {
 
 app-home , app-list-formations , app-list-categories {
   width: 100%;
-  padding: 10% 50px;
+  padding: 18% 50px 10% 50px;
 }
 app-menu-side-bar {
   background-color: #F0F2F5;
@@ -478,4 +478,10 @@ a {
     opacity: 0;
     transform: translateX(-50%) scale(0, 1);
   }
+}
+
+.bx-x{
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
 }

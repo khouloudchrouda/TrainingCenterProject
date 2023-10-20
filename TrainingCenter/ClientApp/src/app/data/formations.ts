@@ -7,7 +7,12 @@ export const formations = [
     { N: '6', title: 'developpement des applications mobile', Category: 'Developement', Durée: '6 mois', Prix: '140£' },
     { N: '7', title: 'Fondamentaux techniques de la securité des systemes d’information', Category: 'Securité', Durée: '3semaines', Prix: '40£' },
     { N: '8', title: 'Principe et organisation des audits en securité', Category: 'Securité', Durée: '2 semaines', Prix: '70£' },
-    { N: '9', title: 'developpement des applications mobile', Category: 'Developement', Durée: '6 mois', Prix: '140£' }
+    { N: '9', title: 'developpement des applications mobile', Category: 'Developement', Durée: '6 mois', Prix: '140£' },
+    { N: '10', title: 'Principe et organisation des audits en securité', Category: 'Securité', Durée: '2 semaines', Prix: '70£' },
+    { N: '11', title: 'developpement des applications mobile', Category: 'Developement', Durée: '6 mois', Prix: '140£' },
+    { N: '12', title: 'Fondamentaux techniques de la securité des systemes d’information', Category: 'Securité', Durée: '3semaines', Prix: '40£' },
+    { N: '13', title: 'Principe et organisation des audits en securité', Category: 'Securité', Durée: '2 semaines', Prix: '70£' },
+    { N: '14', title: 'developpement des applications mobile', Category: 'Developement', Durée: '6 mois', Prix: '140£' }
 ]
 
 export const columnsformations = [

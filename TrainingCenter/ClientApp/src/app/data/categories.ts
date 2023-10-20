@@ -9,6 +9,11 @@ export const categories = [
     {'N': 8,'Titre': 'Marketing','Code': '100008','Description': 'inclure le développement de logiciels, le développement dapplications mobiles, le développement web...'},
     {'N': 9,'Titre': 'Integrateur','Code': '100009','Description': 'inclure le développement de logiciels, le développement dapplications mobiles, le développement web...'},
     {'N': 10,'Titre': 'Intellegence artificiel','Code': '100010','Description': 'inclure le développement de logiciels, le développement dapplications mobiles, le développement web...'},
+    {'N': 11,'Titre': 'Réseau et Sécurité','Code': '100006','Description': 'inclure le développement de logiciels, le développement dapplications mobiles, le développement web...'},
+    {'N': 12,'Titre': 'Designer','Code': '100007','Description': 'inclure le développement de logiciels, le développement dapplications mobiles, le développement web...'},
+    {'N': 13,'Titre': 'Marketing','Code': '100008','Description': 'inclure le développement de logiciels, le développement dapplications mobiles, le développement web...'},
+    {'N': 14,'Titre': 'Integrateur','Code': '100009','Description': 'inclure le développement de logiciels, le développement dapplications mobiles, le développement web...'},
+    {'N': 15,'Titre': 'Intellegence artificiel','Code': '100010','Description': 'inclure le développement de logiciels, le développement dapplications mobiles, le développement web...'},
     
   ];
 

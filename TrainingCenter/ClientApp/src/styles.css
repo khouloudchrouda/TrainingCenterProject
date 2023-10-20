@@ -485,3 +485,28 @@ a {
   position: absolute;
   cursor: pointer;
 }
+.btn-paginate{
+  border: none;
+  background: none;
+}
+.btn-circle-paginate{
+    width: 34px;
+    height: 34px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    text-align: center;
+    border: var(--grey-14) 1px solid;
+}
+.btn-circle-paginate.active {
+ background-color: var(--pink-light);
+ border: var(--grey-14) 1px solid;
+}
+.btn-circle-paginate a {
+  color: var(--grey-14);
+  
+ }
+ .btn-circle-paginate.active a {
+  color: white;
+  
+ }

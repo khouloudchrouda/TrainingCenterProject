@@ -29,17 +29,26 @@
                  </ng-template>
                </ngx-datatable-column>
 
-             
-            <ngx-datatable-footer>
-              <ng-template ngx-datatable-footer-template>
-                <div class="d-flex justify-content-center"> 
-                    <button class="btn-paginate" [disabled]="currentPage === 0" (click)="currentPage = currentPage - 1"><img src="assets\icons\circle-arrow-left.png" /></button>
-                    <button class="btn-paginate"><img src="assets\icons\pagenumber.png" /></button>
-                    <button class="btn-paginate"><img src="assets\icons\pagenumber2.png" /></button>
-                    <button class="btn-paginate" [disabled]="currentPage >= (Data.length / pageSize) - 1" (click)="currentPage = currentPage + 1"><img src="assets\icons\circle-arrow-right.png" /></button>
-              </div> 
-              </ng-template>
-            </ngx-datatable-footer>
+               <ngx-datatable-footer>
+                <ng-template
+                  let-rowCount="rowCount"
+                  let-pageSize="pageSize"
+                  let-selectedCount="selectedCount"
+                  let-curPage="curPage"
+                  let-offset="offset"
+                  ngx-datatable-footer-template
+                >
+                  <app-datatable-pager
+                    [page]="curPage"
+                    [visiblePagesCount]="currentVisible"
+                    [size]="pageSize"
+                    [count]="rowCount"
+                    [hidden]="false"
+                    (change)="table.onFooterPage($event)">
+                  </app-datatable-pager>
+                </ng-template>
+              </ngx-datatable-footer>
+
 </ngx-datatable>
 
 

@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Output , Input ,SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Output , Input ,SimpleChanges, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { DatatableComponent } from '@swimlane/ngx-datatable';
 @Component({
   selector: 'app-ng-bootstrap-table',
   templateUrl: './ng-bootstrap-table.component.html',
@@ -9,6 +10,7 @@ export class NgBootstrapTableComponent {
   @Output() openRowEvent = new EventEmitter<any>();
   @Output() deleteRowEvent = new EventEmitter<any>();
   @Output() editRowEvent = new EventEmitter<any>();
+  @ViewChild(DatatableComponent) public table!: DatatableComponent;
   @Input() Data: any[] = [] ;
   @Input() Columns: any[] = [] ;
 
@@ -16,6 +18,7 @@ export class NgBootstrapTableComponent {
   loadingIndicator: boolean = true;
   currentPage = 1;
   pageSize = 10;
+  currentVisible: number = 3;
   columns : any = [];
   rows : any = [];
 

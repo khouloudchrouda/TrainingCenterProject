@@ -28,6 +28,7 @@ import { ModuleProgrammeComponent } from './Models/module-programme/module-progr
 import { ListCategoriesComponent } from './gestion-Categories/list-categories/list-categories.component';
 import { AddCategoriesComponent } from './gestion-Categories/add-categories/add-categories.component';
 import { DetailsCategorieComponent } from './gestion-Categories/details-categorie/details-categorie.component';
+import { DataTablePagerComponent } from './Models/ng-bootstrap-table/pager.component';
 
 
 
@@ -51,7 +52,8 @@ import { DetailsCategorieComponent } from './gestion-Categories/details-categori
         ModuleProgrammeComponent,
         ListCategoriesComponent,
         AddCategoriesComponent,
-        DetailsCategorieComponent
+        DetailsCategorieComponent,
+        DataTablePagerComponent
         
     ],
     providers: [

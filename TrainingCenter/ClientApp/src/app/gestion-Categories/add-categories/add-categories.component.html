@@ -4,26 +4,37 @@
             <div class="section-title">
                 <span class="subtitle">Ajouter Catégorie<i class='bx bx-x' (click)="closePopup()"></i></span> 
             </div>
-            <div class="row justify-content-left p-5 pt-3">
-                <div class="col-12 form-group ">
-                        <label  class="form-label body_medium">Titre</label>
-                        <input  type="text" class="form-control"  placeholder="Ecrire Titre">
-                </div>
-                <div class="col-5 form-group p-2 ">
-                    <label  class="form-label body_medium">Code</label>
-                    <div class="input-group col-8">
-                        <input style="border-left: none;" type="text"  class="form-control"  placeholder="Ecrire code">
+            <form [formGroup]="CategoriesDetails" id="msform">
+                <div class="row justify-content-left p-5 pt-3">
+                    <div class="col-12 form-group ">
+                            <label  class="form-label body_medium">Titre</label>
+                            <input formControlName="Titre" type="text" class="form-control"  placeholder="Ecrire Titre"> 
                     </div>
-                 </div>
-                <div class="col-12 form-group p-2">
-                    <label  class="form-label body_medium">Description (500 characters max.)</label>
-                    <div class="input-group">
-                        <textarea rows="5" cols="5" formControlName="description" class="form-control" placeholder="Ecrire Description"></textarea> 
+                    <div *ngIf="Submit && CategoriesDetails.controls.Titre.errors">
+                        <div class="required" *ngIf="detailsCategories.Titre.errors?.required">Titre is required</div>
+                    </div>
+                    <div class="col-5 form-group p-2 ">
+                        <label  class="form-label body_medium">Code</label>
+                        <div class="input-group col-8">
+                            <input formControlName="Code" style="border-left: none;" type="text"  class="form-control"  placeholder="Ecrire code">
+                        </div>
+                        <div *ngIf="Submit && CategoriesDetails.controls.Code.errors">
+                            <div class="required" *ngIf="detailsCategories.Code.errors?.required">Code is required</div>
+                        </div>
+                    </div>
+                    <div class="col-12 form-group p-2">
+                        <label  class="form-label body_medium">Description (500 characters max.)</label>
+                        <div class="input-group">
+                            <textarea rows="5" cols="5" formControlName="Description" class="form-control" placeholder="Ecrire Description"></textarea> 
+                        </div>
+                        <div *ngIf="Submit && CategoriesDetails.controls.Description.errors">
+                            <div class="required" *ngIf="detailsCategories.Description.errors?.required">Description is required</div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
             <div class="section-btn">
-                <button class="btn btn-success body_medium" style="" (click)="closePopup()">SAUVEGARDER</button>
+                <button class="btn btn-success body_medium"  (click)="SaveCategory()">SAUVEGARDER</button>
                 <button class="btn btn-outline-danger body_medium"  (click)="closePopup()">ANNULER</button>
                 
             </div>

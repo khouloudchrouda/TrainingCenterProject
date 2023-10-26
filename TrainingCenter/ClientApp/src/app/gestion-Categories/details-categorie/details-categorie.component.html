@@ -6,7 +6,7 @@
         <div class="row justify-content-left p-5">
             <div class="col-12 form-group ">
                     <label  class="form-label col-3 body_medium">Titre :  </label>
-                    <span class=" col-6">  Developpement Mobile</span>
+                    <span class=" col-6"> {{category_data['Titre']}}</span>
                     <div class=" col-3">
                         <svg width="30" height="40" class="pdficon">
                       <image xlink:href="assets/images/print-pdf.png" width="30" height="40" />
@@ -15,13 +15,11 @@
             </div>
             <div class="col-12 form-group ">
                 <label  class="form-label col-3 body_medium">Code :  </label>
-                <span>  1000056</span>
+                <span>  {{category_data['Code']}}</span>
              </div>
             <div class="col-12 form-group">
                 <label  class="form-label col-3 body_medium">Description :  </label>
-                <span style="text-align: left;"> Création d'applications spécifiquement conçues 
-                    pour les appareils mobiles tels que les smartphones
-                     et les tablettes</span>
+                <span class="col-9" style="text-align: left;"> {{category_data['Description']}} </span>
             </div>
         </div>
         <!-- <div class="section-btn">

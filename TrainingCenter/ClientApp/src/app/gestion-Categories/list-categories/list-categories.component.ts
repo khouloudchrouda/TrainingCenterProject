@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { categories, columnscategories } from 'src/app/data/categories';
+import { CategoriesService } from 'src/app/services/categories.service';
 
 @Component({
   selector: 'app-list-categories',
@@ -12,12 +13,14 @@ export class ListCategoriesComponent {
   showFormulaire = false
   Data = categories
   Columns = columnscategories
+ 
+  constructor(private categoriesService: CategoriesService) {}
 
 
   OpenRow(row: any): void{
-    console.log('im in open')
     this.showDetails = true;
     this.type_action = "open"
+    this.categoriesService.setCategoryId(row)
   }
   DeleteRow(row: any){
     console.log('im in delete')

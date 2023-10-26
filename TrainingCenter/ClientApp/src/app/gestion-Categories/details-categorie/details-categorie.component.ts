@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CategoriesService } from 'src/app/services/categories.service';
 
 @Component({
   selector: 'app-details-categorie',
@@ -10,7 +11,13 @@ export class DetailsCategorieComponent {
   @Output() close = new EventEmitter<any>();
   title : string = 'Voulez-vous vraiment supprimer La Categorie?';
   showPopupDelete = false
-  
+  category_data : any = {};
+
+  constructor(private categoriesService: CategoriesService) {}
+
+  ngOnInit() {
+    this.category_data = this.categoriesService.getCategoryById();
+  }
 
   DeleteFormation(){
     this.showPopupDelete = true

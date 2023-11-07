@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-filter-data',
@@ -6,8 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./filter-data.component.css']
 })
 export class FilterDataComponent {
+  @Output() close = new EventEmitter<any>();
+  @Input() FilterDef : any = {} ;
 
-   filterDef = [
-  ];
 
+  ngOnInit() {
+    
+    console.log(this.FilterDef)
+    }
+    getObjectKeys(obj: any): string[] {
+      return Object.keys(obj);
+    }
+  closePopup(){
+    this.close.emit(false);
+  }
 }

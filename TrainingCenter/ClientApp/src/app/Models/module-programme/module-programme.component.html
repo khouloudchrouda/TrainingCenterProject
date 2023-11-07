@@ -1,1 +1,19 @@
-<p>module-programme works!</p>
+<div #container class="container" *ngFor="let module of modules; let i = index;" >
+    <div class=" d-flex" style="justify-content: space-between;">
+        <label class="control-label pt-2" for="sName">module {{i}}: </label>
+        <div  class="btn-actions-right" >  
+            <button class="btn body_medium" style="margin-right: 10px;" (click)="removeModule(i)">  <img src="assets\icons\circle-plus.png" /></button>
+           
+        </div>
+    </div>
+    <input type="text"  placeholder="ecrire module"/>
+    <div class="d-flex p-3"  sous_modules_array>
+        <input class="input-sous-module" type="text" placeholder="ecrire sous module"/>
+        <img class="add-sous-module"  (click)="addNewDiv(0)" src="assets\icons\circle-delete.png" />
+    </div>
+    <div class="d-flex p-3" *ngFor="let sous_module of sous_modules_array ; let j = index;" sous_modules_array>
+        <input class="input-sous-module" type="text" placeholder="ecrire sous module"/>
+        <img class="add-sous-module"  (click)="addNewDiv(j)" src="assets\icons\circle-delete.png" />
+    </div>
+    <div class="showInputField"></div> 
+</div>

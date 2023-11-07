@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { categories, columnscategories } from 'src/app/data/categories';
-import { CategoriesService } from 'src/app/services/categories.service';
+import { CategoriesService } from 'src/app/gestion-Categories/categories.service';
 
 @Component({
   selector: 'app-list-categories',
@@ -11,11 +11,19 @@ export class ListCategoriesComponent {
   showDetails = false;
   type_action = "";
   showFormulaire = false
-  Data = categories
+  Data = categories;
   Columns = columnscategories
- 
+  datasource : any
+  showList = false;
   constructor(private categoriesService: CategoriesService) {}
-
+  
+   ngOnInit() {
+    this.categoriesService.getListCategories().subscribe((data) => (
+       this.datasource = data,
+       console.log("this." , this.datasource),
+       this.showList = true
+      ));
+  }
 
   OpenRow(row: any): void{
     this.showDetails = true;
@@ -23,14 +31,14 @@ export class ListCategoriesComponent {
     this.categoriesService.setCategoryId(row)
   }
   DeleteRow(row: any){
-    console.log('im in delete')
     this.showDetails = true;
     this.type_action = "delete"
+    this.categoriesService.setCategoryId(row)
   }
   EditRow(row: any){
-    console.log('im in edit')
     this.showDetails = true;
     this.type_action = "edit"
+    this.categoriesService.setCategoryId(row)
   }
 
   closePopup(value : boolean){

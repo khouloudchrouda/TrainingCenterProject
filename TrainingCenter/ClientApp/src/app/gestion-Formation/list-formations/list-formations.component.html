@@ -9,7 +9,8 @@
     </div>
     <div  class="btn-actions-right" >  
         <button class="btn btn-outline-dark body_medium" style="margin-right: 10px;" > Imprimer <i class='bx bx-down-arrow-alt' ></i></button>
-        <button class="btn btn-outline-dark body_medium" >Filters <i class='bx bx-filter' ></i></button>
+        <button class="btn btn-outline-dark body_medium" (click)="OpenFiltre()">Filters <i class='bx bx-filter' ></i></button>
+        <app-filter-data [FilterDef] = filterDef (close)="closePopup($event)" *ngIf="showfilter" ></app-filter-data>
     </div>
     </div>
     <div class="content-tabel">
@@ -20,5 +21,5 @@
     </div>
     <app-formation-details (close)="closePopup($event)" [type] = type_action *ngIf="showDetails"></app-formation-details>
     <app-add-formation (close)="closePopup($event)"  *ngIf="showFormulaire"></app-add-formation>
-
+   
 </div>   

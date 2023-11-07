@@ -2,6 +2,7 @@
     <div>
       <app-search-data></app-search-data>
     </div>
+ 
     <div class="btn-actions">
     <div  class="btn-actions-left" >
         <button class="btn btn-outline-dark body_medium" (click)="OpenFormulaire()" ><i class='bx bx-plus' ></i>  Ajouter Categorie</button>
@@ -15,7 +16,7 @@
         <div class="content-heading">    
             <span>Liste des Categories:</span>    
         </div>
-        <app-ng-bootstrap-table [Data] = Data [Columns] = Columns (openRowEvent)="OpenRow($event)" (deleteRowEvent)="DeleteRow($event)" (editRowEvent)="EditRow($event)"></app-ng-bootstrap-table>
+        <app-ng-bootstrap-table *ngIf="showList" [Data] = datasource [Columns] = Columns (openRowEvent)="OpenRow($event)" (deleteRowEvent)="DeleteRow($event)" (editRowEvent)="EditRow($event)"></app-ng-bootstrap-table>
     </div>
     <app-details-categorie (close)="closePopup($event)" [type] = type_action *ngIf="showDetails"></app-details-categorie>
     <app-add-categories (close)="closePopup($event)"  *ngIf="showFormulaire"></app-add-categories>

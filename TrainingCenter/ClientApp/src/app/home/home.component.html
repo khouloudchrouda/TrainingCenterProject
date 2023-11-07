@@ -12,8 +12,10 @@
         <button class="btn btn-outline-dark body_medium" >Filters <i class='bx bx-filter' ></i></button>
     </div>
     </div>
-    <app-ng-bootstrap-table [Data] = Data [Columns] = Columns (openRowEvent)="OpenRow($event)" (deleteRowEvent)="DeleteRow($event)" (editRowEvent)="EditRow($event)"></app-ng-bootstrap-table>
-    <app-formation-details (close)="closePopup($event)" [type] = type_action *ngIf="showDetails"></app-formation-details>
-    <app-add-formation (close)="closePopup($event)"  *ngIf="showFormulaire"></app-add-formation>
+   <app-multi-select-drop-down [list] = ListCtaegory></app-multi-select-drop-down>
 
-</div>           
+   <app-module-programme></app-module-programme>
+    <!-- <app-ng-bootstrap-table [Data] = Data [Columns] = Columns (openRowEvent)="OpenRow($event)" (deleteRowEvent)="DeleteRow($event)" (editRowEvent)="EditRow($event)"></app-ng-bootstrap-table>
+    <app-formation-details (close)="closePopup($event)" [type] = type_action *ngIf="showDetails"></app-formation-details>
+    <app-add-formation (close)="closePopup($event)"  *ngIf="showFormulaire"></app-add-formation> -->         
+  

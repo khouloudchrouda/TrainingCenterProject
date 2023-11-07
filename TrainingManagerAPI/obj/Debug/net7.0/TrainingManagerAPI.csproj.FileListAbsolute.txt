@@ -1,33 +1,109 @@
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\appsettings.json
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.exe
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.deps.json
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.runtimeconfig.json
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.dll
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.pdb
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.csproj.AssemblyReference.cache
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.AssemblyInfoInputs.cache
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.AssemblyInfo.cs
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.csproj.CoreCompileInputs.cache
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets\msbuild.TrainingManagerAPI.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.TrainingManagerAPI.props
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.TrainingManagerAPI.props
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.TrainingManagerAPI.props
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\scopedcss\bundle\TrainingManagerAPI.styles.css
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.csproj.CopyComplete
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.dll
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\refint\TrainingManagerAPI.dll
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.pdb
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.genruntimeconfig.cache
-C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerAPI\obj\Debug\net7.0\ref\TrainingManagerAPI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\appsettings.Development.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\appsettings.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.staticwebassets.runtime.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.exe
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.deps.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.runtimeconfig.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAPI.pdb
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\AWSSDK.Core.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\DnsClient.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\MongoDB.Bson.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\MongoDB.Driver.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\SharpCompress.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Snappier.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\ZstdSharp.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.csproj.AssemblyReference.cache
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.AssemblyInfoInputs.cache
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.AssemblyInfo.cs
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.csproj.CoreCompileInputs.cache
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.RazorAssemblyInfo.cache
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.RazorAssemblyInfo.cs
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets\msbuild.TrainingManagerAPI.Microsoft.AspNetCore.StaticWebAssets.props
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.TrainingManagerAPI.props
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.TrainingManagerAPI.props
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.TrainingManagerAPI.props
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets.pack.json
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets.build.json
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\staticwebassets.development.json
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\scopedcss\bundle\TrainingManagerAPI.styles.css
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\scopedcss\projectbundle\TrainingManagerAPI.bundle.scp.css
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.csproj.CopyComplete
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\refint\TrainingManagerAPI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.pdb
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.genruntimeconfig.cache
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\ref\TrainingManagerAPI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAngular.deps.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAngular.runtimeconfig.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\spa.proxy.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAngular.staticwebassets.runtime.json
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAngular.exe
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\AutoMapper.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Duende.IdentityServer.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Duende.IdentityServer.AspNetIdentity.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.Storage.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Duende.IdentityServer.Storage.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Humanizer.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\IdentityModel.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.SpaProxy.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAngular.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerBLL.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerDAL.dll
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerAngular.pdb
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerBLL.pdb
+E:\TrainingCenterProject\TrainingManagerAPI\bin\Debug\net7.0\TrainingManagerDAL.pdb
+E:\TrainingCenterProject\TrainingManagerAPI\obj\Debug\net7.0\TrainingManagerAPI.MvcApplicationPartsAssemblyInfo.cs

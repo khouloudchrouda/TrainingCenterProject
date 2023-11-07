@@ -1,0 +1,12 @@
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\TrainingManagerDAL.csproj.AssemblyReference.cache
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\TrainingManagerDAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\TrainingManagerDAL.AssemblyInfoInputs.cache
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\TrainingManagerDAL.AssemblyInfo.cs
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\TrainingManagerDAL.csproj.CoreCompileInputs.cache
+E:\TrainingCenterProject\TrainingManagerDAL\bin\Debug\net7.0\TrainingManagerDAL.deps.json
+E:\TrainingCenterProject\TrainingManagerDAL\bin\Debug\net7.0\TrainingManagerDAL.dll
+E:\TrainingCenterProject\TrainingManagerDAL\bin\Debug\net7.0\TrainingManagerDAL.pdb
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\TrainingManagerDAL.dll
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\refint\TrainingManagerDAL.dll
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\TrainingManagerDAL.pdb
+E:\TrainingCenterProject\TrainingManagerDAL\obj\Debug\net7.0\ref\TrainingManagerDAL.dll

@@ -40,8 +40,8 @@
                     <div class="required" *ngIf="information.duree.errors?.required">Durée is required</div>
                 </div>
                 <label class="control-label" for="sName">Category : *</label>
-                    
                     <div class="d-flex">
+                        <!-- <app-multi-select-drop-down formControlName="category"  name="category" placeholder="Selectionner category de Formation" [list] = ListCtaegory></app-multi-select-drop-down> -->
                         <input type="text" formControlName="category" name="category" placeholder="Selectionner category de Formation"/>
                         <img class="info-champ" src="assets\icons\circle-exclamation.png" />
                      </div>
@@ -83,7 +83,7 @@
             <fieldset *ngIf="step == 2" >
                 <label class="control-label" for="sName">Description : *</label>
                 <div class="d-flex">
-                    <app-rich-text-editor class="col-10" placeholder="description"  rows="5" cols="5" ></app-rich-text-editor>
+                    <app-rich-text-editor (descriptiondetailsdata)="getdataDescriptionDetails($event , 'description')"  (descriptiondetailscontrol)="getcontrolDescriptionDetails($event , 'description')" class="col-10" placeholder="description"  rows="5" cols="5" ></app-rich-text-editor>
                     <img class="info-champ" src="assets\icons\circle-exclamation.png" />
                  </div>
                 
@@ -92,7 +92,7 @@
                 </div>
                 <label class="control-label" for="sName">Population Cible : *</label>
                 <div class="d-flex">
-                    <app-rich-text-editor class="col-10" placeholder="description"  rows="5" cols="5" ></app-rich-text-editor>
+                    <app-rich-text-editor  (descriptiondetailsdata)="getdataDescriptionDetails($event , 'population')"  (descriptiondetailscontrol)="getcontrolDescriptionDetails($event , 'population')"class="col-10" placeholder="population"  rows="5" cols="5" ></app-rich-text-editor>
                     <img class="info-champ" src="assets\icons\circle-exclamation.png" />
                  </div>
                 
@@ -101,8 +101,8 @@
                 </div>
                 <label class="control-label" for="sName">Prerequis : *</label>
                 <div class="d-flex">
-                    <app-rich-text-editor class="col-10" placeholder="description"  rows="5" cols="5" ></app-rich-text-editor>
-                    <!-- <textarea rows="5" cols="5" formControlName="prerequis"  placeholder="prerequis"></textarea> -->
+                    <app-rich-text-editor (descriptiondetailsdata)="getdataDescriptionDetails($event , 'prerequis')"  (descriptiondetailscontrol)="getcontrolDescriptionDetails($event , 'prerequis')" class="col-10" placeholder="prerequis"  rows="5" cols="5" ></app-rich-text-editor>
+                    
                     <img class="info-champ" src="assets\icons\circle-exclamation.png" />
                  </div>
                 
@@ -121,10 +121,12 @@
                 <div class="d-flex" style="justify-content: space-between;">
                 <label class="control-label" for="sName">Programme : *</label>
                 <div  class="btn-actions-right" >  
-                    <button class="btn btn-outline-dark body_medium" style="margin-right: 10px;" > <i class='bx bx-plus' ></i> Ajouter module </button>
+                    <button class="btn btn-outline-dark body_medium" style="margin-right: 10px;" (click)="AddModule()" > <i class='bx bx-plus' ></i> Ajouter module </button>
                 </div>
-            </div>
                 
+            </div>
+            <app-module-programme [modules]= modules></app-module-programme>
+            <!-- <ng-template #dynamic></ng-template> -->
             </fieldset>
             <div class="action-button-section" *ngIf="step == 3">
                 <input (click)="previous()" type="button" name="Retour" class="previous action-button-previous" value="Retour"/>

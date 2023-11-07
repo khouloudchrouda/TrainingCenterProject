@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -9,8 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <Compile Remove="Models\**" />
+    <Content Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.22.0" />
+    <PackageReference Include="swashbuckle.aspnetcore" Version="6.5.0" />
+    <PackageReference Include="swashbuckle.aspnetcore.swaggerui" Version="6.5.0" />
+  </ItemGroup>
+	
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\TrainingCenter\TrainingManagerAngular.csproj" />
+    <ProjectReference Include="..\TrainingManagerBLL\TrainingManagerBLL.csproj" />
   </ItemGroup>
 
 </Project>

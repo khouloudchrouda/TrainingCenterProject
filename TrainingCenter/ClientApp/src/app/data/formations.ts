@@ -1,3 +1,5 @@
+import { ListCtaegories, ListDuréeFormation, ListPrixFormation } from "./dropdowndata"
+
 export const formations = [
     { N: '1', title: 'Fondamentaux techniques de la securité des systemes d’information', Category: 'Securité', Durée: '3semaines', Prix: '40£' },
     { N: '2', title: 'Principe et organisation des audits en securité', Category: 'Securité', Durée: '2 semaines', Prix: '70£' },
@@ -17,7 +19,6 @@ export const formations = [
 
 export const columnsformations = [
     
-        { prop: 'N'  , name :'N'},
         { prop: 'title'  , name :'title'},
         { prop: 'Category' , name :'Category' },
         { prop: 'Durée'  , name :'Durée'},
@@ -44,3 +45,12 @@ export const Programmeformations = [
     { name: 'CCP 4 : Concevoir les éléments graphiques d une interface et de supports de communication'  , programme : [ 'Réaliser des illustrations, des graphismes et des visuels' ,  'Réaliser une animation pour différents supports de diffusion' , 'Créer des supports de communication']},
 
 ]
+
+export const Filterformations = {
+    'Category':  ListCtaegories,
+
+    'Durée': ListDuréeFormation,
+    
+    'Prix':  ListPrixFormation
+    
+}

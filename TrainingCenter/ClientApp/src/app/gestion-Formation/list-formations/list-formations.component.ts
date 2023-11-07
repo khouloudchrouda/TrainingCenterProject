@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { columnsformations, formations } from 'src/app/data/formations';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Filterformations, columnsformations, formations } from 'src/app/data/formations';
 
 @Component({
   selector: 'app-list-formations',
@@ -7,12 +7,18 @@ import { columnsformations, formations } from 'src/app/data/formations';
   styleUrls: ['./list-formations.component.css']
 })
 export class ListFormationsComponent {
+
   showDetails = false;
+  showfilter = false;
   type_action = "";
   showFormulaire = false
   Data = formations
   Columns = columnsformations
+  filterDef : any = {}
 
+  ngOnInit() {
+  this.filterDef = Filterformations
+  }
 
   OpenRow(row: any): void{
     console.log('im in open')
@@ -33,8 +39,15 @@ export class ListFormationsComponent {
   closePopup(value : boolean){
     this.showDetails = value;
     this.showFormulaire = value;
+    this.showfilter = value
   }
+
   OpenFormulaire(){
     this.showFormulaire = true;
   }
+  OpenFiltre(){
+    this.showfilter =!this.showfilter
+    console.log("this.showfilter" , this.showfilter)
+  }
+
 }

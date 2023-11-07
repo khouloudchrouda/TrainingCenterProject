@@ -9,3 +9,18 @@ C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\Tra
 C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\refint\TrainingManagerBLL.dll
 C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.pdb
 C:\Users\khouloud\Desktop\NS2 Technoogie\TrainingManagerBLL\obj\Debug\net7.0\ref\TrainingManagerBLL.dll
+E:\TrainingCenterProject\TrainingManagerBLL\bin\Debug\net7.0\TrainingManagerBLL.deps.json
+E:\TrainingCenterProject\TrainingManagerBLL\bin\Debug\net7.0\TrainingManagerBLL.dll
+E:\TrainingCenterProject\TrainingManagerBLL\bin\Debug\net7.0\TrainingManagerBLL.pdb
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.AssemblyInfoInputs.cache
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.AssemblyInfo.cs
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.csproj.CoreCompileInputs.cache
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.dll
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\refint\TrainingManagerBLL.dll
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.pdb
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\ref\TrainingManagerBLL.dll
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.csproj.AssemblyReference.cache
+E:\TrainingCenterProject\TrainingManagerBLL\bin\Debug\net7.0\TrainingManagerDAL.dll
+E:\TrainingCenterProject\TrainingManagerBLL\bin\Debug\net7.0\TrainingManagerDAL.pdb
+E:\TrainingCenterProject\TrainingManagerBLL\obj\Debug\net7.0\TrainingManagerBLL.csproj.CopyComplete

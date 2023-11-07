@@ -1,0 +1,37 @@
+.container{
+    background-color: var(--grey-7);
+}
+/*inputs*/
+input{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+    height: 50px;
+}
+ input:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #2C3E50;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+.input-sous-module{
+    border-left: 5px solid var(--green-1);
+    border-radius: 0px;
+    width: 70%;
+}
+.add-sous-module{
+    width: 47px;
+    height: 40px;
+    margin: 0 20px;
+}

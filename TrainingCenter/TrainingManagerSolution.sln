@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingManagerAngular", "TrainingManagerAngular.csproj", "{FF675CB6-649E-4768-B233-98E3F40D4295}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainingManagerAngular", "TrainingManagerAngular.csproj", "{FF675CB6-649E-4768-B233-98E3F40D4295}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingManagerDAL", "..\TrainingManagerDAL\TrainingManagerDAL.csproj", "{BA693F1C-E76F-4448-B0AE-89F1C0E0CFF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainingManagerDAL", "..\TrainingManagerDAL\TrainingManagerDAL.csproj", "{BA693F1C-E76F-4448-B0AE-89F1C0E0CFF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingManagerBLL", "..\TrainingManagerBLL\TrainingManagerBLL.csproj", "{E27D4715-C922-4FAA-9E4B-24868ADCAF4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainingManagerBLL", "..\TrainingManagerBLL\TrainingManagerBLL.csproj", "{E27D4715-C922-4FAA-9E4B-24868ADCAF4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingManagerAPI", "..\TrainingManagerAPI\TrainingManagerAPI.csproj", "{2A79E778-E08E-4353-AAE5-5728C1D0BB99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingManagerAPI", "..\TrainingManagerAPI\TrainingManagerAPI.csproj", "{B3954B29-A181-42C6-B7AF-DED621DAD7FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{E27D4715-C922-4FAA-9E4B-24868ADCAF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E27D4715-C922-4FAA-9E4B-24868ADCAF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E27D4715-C922-4FAA-9E4B-24868ADCAF4B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A79E778-E08E-4353-AAE5-5728C1D0BB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A79E778-E08E-4353-AAE5-5728C1D0BB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A79E778-E08E-4353-AAE5-5728C1D0BB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A79E778-E08E-4353-AAE5-5728C1D0BB99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3954B29-A181-42C6-B7AF-DED621DAD7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3954B29-A181-42C6-B7AF-DED621DAD7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3954B29-A181-42C6-B7AF-DED621DAD7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3954B29-A181-42C6-B7AF-DED621DAD7FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

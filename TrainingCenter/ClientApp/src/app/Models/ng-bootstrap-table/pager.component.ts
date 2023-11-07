@@ -16,10 +16,7 @@ import { DataTablePagerComponent as SuperDataTablePagerComponent } from '@swimla
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DataTablePagerComponent extends SuperDataTablePagerComponent {
-  @Input() pagerLeftArrowIcon: string = 'icon-left';
-  @Input() pagerRightArrowIcon: string = 'icon-right';
-  @Input() pagerPreviousIcon: string = 'icon-prev';
-  @Input() pagerNextIcon: string = 'icon-skip';
+
 
   @Input()
   set size(val: number) {

@@ -1,17 +1,280 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\khouloud\\Desktop\\NS2 Technoogie\\TrainingManagerAPI\\TrainingManagerAPI.csproj": {}
+    "E:\\TrainingCenterProject\\TrainingManagerAPI\\TrainingManagerAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\khouloud\\Desktop\\NS2 Technoogie\\TrainingManagerAPI\\TrainingManagerAPI.csproj": {
+    "E:\\TrainingCenterProject\\TrainingCenter\\TrainingManagerAngular.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khouloud\\Desktop\\NS2 Technoogie\\TrainingManagerAPI\\TrainingManagerAPI.csproj",
-        "projectName": "TrainingManagerAPI",
-        "projectPath": "C:\\Users\\khouloud\\Desktop\\NS2 Technoogie\\TrainingManagerAPI\\TrainingManagerAPI.csproj",
+        "projectUniqueName": "E:\\TrainingCenterProject\\TrainingCenter\\TrainingManagerAngular.csproj",
+        "projectName": "TrainingManagerAngular",
+        "projectPath": "E:\\TrainingCenterProject\\TrainingCenter\\TrainingManagerAngular.csproj",
         "packagesPath": "C:\\Users\\khouloud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khouloud\\Desktop\\NS2 Technoogie\\TrainingManagerAPI\\obj\\",
+        "outputPath": "E:\\TrainingCenterProject\\TrainingCenter\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\khouloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.AspNetCore.SpaProxy": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUi": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\TrainingCenterProject\\TrainingManagerAPI\\TrainingManagerAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\TrainingCenterProject\\TrainingManagerAPI\\TrainingManagerAPI.csproj",
+        "projectName": "TrainingManagerAPI",
+        "projectPath": "E:\\TrainingCenterProject\\TrainingManagerAPI\\TrainingManagerAPI.csproj",
+        "packagesPath": "C:\\Users\\khouloud\\.nuget\\packages\\",
+        "outputPath": "E:\\TrainingCenterProject\\TrainingManagerAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\khouloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\TrainingCenterProject\\TrainingCenter\\TrainingManagerAngular.csproj": {
+                "projectPath": "E:\\TrainingCenterProject\\TrainingCenter\\TrainingManagerAngular.csproj"
+              },
+              "E:\\TrainingCenterProject\\TrainingManagerBLL\\TrainingManagerBLL.csproj": {
+                "projectPath": "E:\\TrainingCenterProject\\TrainingManagerBLL\\TrainingManagerBLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
+            "swashbuckle.aspnetcore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "swashbuckle.aspnetcore.swaggerui": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\TrainingCenterProject\\TrainingManagerBLL\\TrainingManagerBLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\TrainingCenterProject\\TrainingManagerBLL\\TrainingManagerBLL.csproj",
+        "projectName": "TrainingManagerBLL",
+        "projectPath": "E:\\TrainingCenterProject\\TrainingManagerBLL\\TrainingManagerBLL.csproj",
+        "packagesPath": "C:\\Users\\khouloud\\.nuget\\packages\\",
+        "outputPath": "E:\\TrainingCenterProject\\TrainingManagerBLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\khouloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\TrainingCenterProject\\TrainingManagerDAL\\TrainingManagerDAL.csproj": {
+                "projectPath": "E:\\TrainingCenterProject\\TrainingManagerDAL\\TrainingManagerDAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\TrainingCenterProject\\TrainingManagerDAL\\TrainingManagerDAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\TrainingCenterProject\\TrainingManagerDAL\\TrainingManagerDAL.csproj",
+        "projectName": "TrainingManagerDAL",
+        "projectPath": "E:\\TrainingCenterProject\\TrainingManagerDAL\\TrainingManagerDAL.csproj",
+        "packagesPath": "C:\\Users\\khouloud\\.nuget\\packages\\",
+        "outputPath": "E:\\TrainingCenterProject\\TrainingManagerDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,13 +308,13 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.Extensions.Options": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[6.0.0, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "MongoDB.Driver": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[2.22.0, )"
             }
           },
           "imports": [
@@ -66,9 +329,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

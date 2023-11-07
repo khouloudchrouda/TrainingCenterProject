@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CategoriesService } from 'src/app/gestion-Categories/categories.service';
 
 @Component({
   selector: 'app-popup-confirmation',
@@ -8,11 +9,16 @@ import { Component, Input } from '@angular/core';
 export class PopupConfirmationComponent {
   show_popup = true;
   @Input() title : any = "" ;
+  @Input() data : any = "" ;
+
+
+  constructor(private categoriesService: CategoriesService) {}
 
   close(){
     this.show_popup = false
   }
   DeleteFormation(){
-    this.show_popup = false
+    this.categoriesService.deleteCategory(this.data);
+    
   }
 }

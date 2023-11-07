@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component,  EventEmitter,  Output,  } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ListCtaegories } from 'src/app/data/dropdowndata';
 
 @Component({
   selector: 'app-add-formation',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class AddFormationComponent {
 
   @Output() close = new EventEmitter<any>();
-
+  ListCtaegory = ListCtaegories
   InformationDetails!: FormGroup;
   DescriptionDetails!: FormGroup;
   ProgrammeDetails!: FormGroup;
@@ -17,7 +18,8 @@ export class AddFormationComponent {
   description_step = false;
   programme_step = false;
   step = 1;
-  constructor(private formBuilder: FormBuilder) { }
+  modules : any[ ]= []
+  constructor(private formBuilder: FormBuilder ) { }
   ngOnInit() {
         this.InformationDetails = this.formBuilder.group({
             title: ['', Validators.required],
@@ -39,14 +41,14 @@ export class AddFormationComponent {
   get description() { return this.DescriptionDetails.controls; }
 
   next(){
+   
     if(this.step==1){
           this.information_step = true;
-          if (this.InformationDetails.invalid) { return  }
           this.step++
     }
     if(this.step==2){
         this.description_step = true;
-        if (this.DescriptionDetails.invalid) { return }
+        if (this.DescriptionDetails.controls.description.status == "INVALID" || this.DescriptionDetails.controls.prerequis.status == "INVALID" || this.DescriptionDetails.controls.population.status == "INVALID") { return }
             this.step++;
     }
   }
@@ -65,6 +67,7 @@ export class AddFormationComponent {
     if(this.step==3){
       this.programme_step = true;
       if (this.ProgrammeDetails.invalid) { return }
+      console.log(this.InformationDetails.value , this.DescriptionDetails.value)
     }
   }
 
@@ -76,4 +79,32 @@ export class AddFormationComponent {
     this.close.emit(false);
   }
   
+  AddModule(){
+    this.modules.push(1)
+    
+  }
+  getdataDescriptionDetails(event: any , type : any):void  {
+    if(type == "description"){
+      this.DescriptionDetails.value.description = event
+    }
+    if(type == "prerequis"){
+      this.DescriptionDetails.value.prerequis = event
+    }
+    if(type == "population"){
+      this.DescriptionDetails.value.population = event
+    }
+  }
+
+  getcontrolDescriptionDetails(event: any , type : any):void{
+    
+    if(type == "description"){
+      this.DescriptionDetails.controls.description = event
+    }
+    if(type == "prerequis"){
+      this.DescriptionDetails.controls.prerequis = event
+    }
+    if(type == "population"){
+      this.DescriptionDetails.controls.population = event
+    }
+  }
 }

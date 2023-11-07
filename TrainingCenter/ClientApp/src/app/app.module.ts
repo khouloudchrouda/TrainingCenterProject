@@ -9,9 +9,6 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
-import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
-import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { MenuSideBarComponent } from './menu-side-bar/menu-side-bar.component';
 import { NgBootstrapTableComponent } from './Models/ng-bootstrap-table/ng-bootstrap-table.component';
 import { ListFormationsComponent } from './gestion-Formation/list-formations/list-formations.component';
@@ -23,13 +20,12 @@ import { PopupConfirmationComponent } from './Models/popup-confirmation/popup-co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from "@angular/common";
 import { RichTextEditorComponent } from './Models/rich-text-editor/rich-text-editor.component';
-import { MultiSelectOptionsComponent } from './Models/multi-select-options/multi-select-options.component';
 import { ModuleProgrammeComponent } from './Models/module-programme/module-programme.component';
 import { ListCategoriesComponent } from './gestion-Categories/list-categories/list-categories.component';
 import { AddCategoriesComponent } from './gestion-Categories/add-categories/add-categories.component';
-import { DetailsCategorieComponent } from './gestion-Categories/details-categorie/details-categorie.component';
 import { DataTablePagerComponent } from './Models/ng-bootstrap-table/pager.component';
-
+import { MultiSelectDropDownComponent } from './Models/multi-select-drop-down/multi-select-drop-down.component';
+import { DetailsCategorieComponent } from './gestion-Categories/details-categorie/details-categorie.component';
 
 
 @NgModule({
@@ -48,23 +44,20 @@ import { DataTablePagerComponent } from './Models/ng-bootstrap-table/pager.compo
         FormationDetailsComponent,
         PopupConfirmationComponent,
         RichTextEditorComponent,
-        MultiSelectOptionsComponent,
         ModuleProgrammeComponent,
         ListCategoriesComponent,
         AddCategoriesComponent,
         DetailsCategorieComponent,
-        DataTablePagerComponent
+        DataTablePagerComponent,
+        MultiSelectDropDownComponent
         
     ],
-    providers: [
-        { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
-    ],
+    providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
         HttpClientModule,
         FormsModule,
-        ApiAuthorizationModule,
         NgxDatatableModule,
         FormsModule,
         ReactiveFormsModule,
@@ -79,7 +72,6 @@ import { DataTablePagerComponent } from './Models/ng-bootstrap-table/pager.compo
             { path: 'formation_details', component: FormationDetailsComponent },
             { path: 'add-formation', component: AddFormationComponent },
             { path: 'list-categories', component: ListCategoriesComponent },
-            { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
         ]),
     ],
     schemas:[NO_ERRORS_SCHEMA], 

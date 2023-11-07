@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { CategoriesService } from 'src/app/services/categories.service';
+import { CategoriesService } from 'src/app/gestion-Categories/categories.service';
 
 @Component({
   selector: 'app-details-categorie',
@@ -27,7 +27,7 @@ export class DetailsCategorieComponent {
     this.close.emit(false);
   }
   EditFormation(){
-    
+    this.categoriesService.updateCategory(this.category_data);
   }
 
 }

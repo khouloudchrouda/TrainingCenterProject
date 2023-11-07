@@ -1,14 +1,18 @@
-<p>filter-data works!</p>
-<div class="filters position-absolute">
+
+<div  class="filters position-absolute">
     <div  class="subtitle">
      <h2 class ="col-8">Filter avec</h2>
     </div>
 
-       <div class="row" v-for="(select, ind) in filterDef">
-      <!-- create filter  -->
+       <div class="row" *ngFor="let select of getObjectKeys(FilterDef) ; let i = index;">
+
+        <div class="col">
+            <app-multi-select-drop-down [label] = select [data] = FilterDef[select]  ></app-multi-select-drop-down>
+            <!-- <multi-select-options v-model="preselection[i]" :label="select.name" :options="select.options"></multi-select-options> -->
+        </div>
        </div>
        <div class="row buttons mb-3">
-           <div class="col text-center"><button class="btn btn-link  body_regular">Annuler</button></div>
-           <div class="col text-right"><button class="btn btn-dark body_medium" >OK</button></div>
+           <div class="col text-center"><button class="btn btn-link  body_regular" (click)="closePopup()">Annuler</button></div>
+           <div class="col text-right"><button class="btn btn-dark body_medium" (click)="closePopup()" >OK</button></div>
        </div>
    </div>

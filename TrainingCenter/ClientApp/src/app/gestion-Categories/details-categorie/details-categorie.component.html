@@ -6,7 +6,7 @@
         <div class="row justify-content-left p-5">
             <div class="col-12 form-group ">
                     <label  class="form-label col-3 body_medium">Titre :  </label>
-                    <span class=" col-6"> {{category_data['Titre']}}</span>
+                    <span class=" col-6"> {{category_data.name}}</span>
                     <div class=" col-3">
                         <svg width="30" height="40" class="pdficon">
                       <image xlink:href="assets/images/print-pdf.png" width="30" height="40" />
@@ -15,11 +15,11 @@
             </div>
             <div class="col-12 form-group ">
                 <label  class="form-label col-3 body_medium">Code :  </label>
-                <span>  {{category_data['Code']}}</span>
+                <span>  {{category_data.code}}</span>
              </div>
             <div class="col-12 form-group">
                 <label  class="form-label col-3 body_medium">Description :  </label>
-                <span class="col-9" style="text-align: left;"> {{category_data['Description']}} </span>
+                <span class="col-9" style="text-align: left;"> {{category_data.description}} </span>
             </div>
         </div>
         <!-- <div class="section-btn">
@@ -49,6 +49,6 @@
         </div>
 
     </div>
-    <app-popup-confirmation [title]= title *ngIf="showPopupDelete"></app-popup-confirmation>
+    <app-popup-confirmation [title]= title [data]= category_data *ngIf="showPopupDelete"></app-popup-confirmation>
     </div>
 </div>

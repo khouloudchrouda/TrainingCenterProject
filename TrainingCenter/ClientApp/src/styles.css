@@ -2,6 +2,48 @@
 @import '../src/assets/styles/colors.css';
 /* Provide sufficient contrast against white background */
 
+/**typo**/
+.body_regular{
+  font-family: "Gotham Rounded";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body_light{
+    font-family: "Gotham Rounded Light";
+    font-size: 16px;
+  }
+
+.body_bold{
+  font-family: "Gotham Rounded";
+  font-size: 16px;
+}
+.body_medium{
+  font-family: "Gotham Rounded Medium";
+  font-size: 16px;
+}
+
+.body_small{
+  font-family: "Gotham Rounded Light";
+  font-size: 14px;
+}
+.body_small_medium{
+  font-family: "Gotham Rounded Medium";
+  font-size: 14px;
+}
+.body_small_bold{
+  font-family: "Gotham Rounded Bold";
+  font-size: 14px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+/**body**/
+
 .container1 {
   width: 100%;
 }
@@ -35,12 +77,7 @@ li {
     color:black
 }
 
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+/**datatable material **/
 
 .ngx-datatable.material {
   background: #FFF;
@@ -479,7 +516,9 @@ a {
     transform: translateX(-50%) scale(0, 1);
   }
 }
-
+/**
+ *paginate
+ */
 .bx-x{
   right: 20px;
   position: absolute;
@@ -510,3 +549,13 @@ a {
   color: white;
   
  }
+
+ .btn-link{
+  color: #000;
+  text-decoration: underline;
+ }
+ .btn-dark {
+  color: #fff;
+  background-color: var(--grey-1);
+  border-color: var(--grey-1);
+}

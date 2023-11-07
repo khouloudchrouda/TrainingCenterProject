@@ -17,11 +17,23 @@ export const categories = [
     
   ];
 
-  export const columnscategories = [
+//   export const columnscategories = [
     
-    { prop: 'N'  , name :'N'},
-    { prop: 'Titre'  , name :'Titre'},
-    { prop: 'Code'  , name :'Code'},
-    { prop: 'Description' , name :'Description' }
+//     { prop: 'N'  , name :'id'},
+//     { prop: 'Titre'  , name :'name'},
+//     { prop: 'Code'  , name :'code'},
+//     { prop: 'Description' , name :'description' },
+//     // { prop: 'Visible' , name :'visible' },
+//     // { prop: 'CreatedAt' , name :'createdAt' },
+//     // { prop: 'UpdatedAt' , name :'updatedAt' }
+
+// ]
+
+
+export const columnscategories = [
+    
+  { prop: 'name'  , name :'Name'},
+  { prop: 'code'  , name :'Code'},
+  { prop: 'description' , name :'Description' }
 
 ]

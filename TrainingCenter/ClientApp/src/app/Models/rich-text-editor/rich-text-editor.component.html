@@ -1,5 +1,6 @@
-<quill-editor class="col-12  content-editor" 
+<quill-editor class="col-12  content-editor" #editorText
     [modules]="quillConfiguration"
 	[styles]="{'min-height': '90px'}" 
+	(onEditorChanged)="changedEditor($event)"
 	[formControl]="control">
 </quill-editor>
